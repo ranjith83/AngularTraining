@@ -1,0 +1,9 @@
+<p>
+  book-list works!
+</p>
+<div *ngFor="let book of books | async">
+  <div> <h2>Title : {{ book.title }}</h2> </div>
+  <div> Subtitle : {{ book.subtitle }}</div>
+  <div> Author : {{ book.author }}</div>
+ <div> <a [routerLink]=" ['/books', book.isbn] ">{{book.isbn}}</a> </div>
+</div>

@@ -1,0 +1,10 @@
+<p>
+  book-detail works!
+</p>
+
+<div *ngIf="book | async; let book">
+  <div> <h2>Title : {{ book.title }}</h2> </div>
+  <div> Subtitle : {{ book.subtitle }}</div>
+  <div> Author : {{ book.author }}</div>
+  <div><a [routerLink]="['edit']">{{ book.isbn }}</a></div>
+</div>

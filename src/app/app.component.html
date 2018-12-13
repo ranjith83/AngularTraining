@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ <info-box></info-box>
+ <mouse-cursor></mouse-cursor>
+
+  <title-box title="title"></title-box>
+  <title-box title="show title"></title-box>
+<title-box (titleClicked)="receiveMessage($event)" title="click me"></title-box>
+<p> {{ showMessage}}</p>
+
+</div>
+<router-outlet></router-outlet>
